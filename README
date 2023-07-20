@@ -1,0 +1,13 @@
+This repo reproduce an error in IO_Uring while requesting the ingress queue with a chained io_uring_prep_recv commande.
+
+ - Building instruction : 
+
+cd liburing-master && make
+cd .. && make
+
+ - Run instruction : 
+
+#Terminal 1 :
+./network/del_topo_b.sh && ./network/topologie_b.sh && ip netns exec A ./A
+#Terminal 2 : 
+ip netns exec B ./E
