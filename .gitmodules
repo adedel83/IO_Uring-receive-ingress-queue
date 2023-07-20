@@ -1,3 +1,0 @@
-[submodule "liburing-master"]
-	path = liburing-master
-	url = https://github.com/axboe/liburing
